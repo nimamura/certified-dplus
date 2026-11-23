@@ -52,7 +52,9 @@ For the residual r* of the best fit, the optimality (KKT) conditions of the
 convex problem give g_{r*} <= 0 with equality at the poles of the optimal model,
 hence L(r*) = chi^2_min. This condition is known: for the equivalent problem of
 least-squares fitting of Stieltjes functions see Grabovsky (2022, Theorem 2.6),
-who attributes it to Caprini (1980). The implementation does not rely on
+who attributes it to Caprini (1980); Lagrange duality for the continuous-data
+version of the problem is in Caprini (1974, eqs 12-18). The lemma above is weak
+duality for this convex problem. The implementation does not rely on
 tightness; it verifies (i) and (ii) for the vector it is given.
 
 ## Exact check of (i)

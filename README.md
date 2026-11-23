@@ -89,9 +89,13 @@ lower_bound(omega, c, sigma, res.certificate) == res.chi2_lower   # True
   assistant.
 - Bounds refer to the floating-point numbers handed to the function, converted
   exactly to rationals.
-- The optimality condition behind the certificate is not ours: for the
-  equivalent problem of fitting Stieltjes functions it is given by Grabovsky
-  (2022, Theorem 2.6), who attributes it to Caprini (1980).
+- The idea behind the certificate is not ours. Lagrange duality for
+  least-squares fitting of analytic functions under a positivity constraint
+  goes back to Caprini (1974, eqs 12-18); the optimality condition for the
+  equivalent problem of fitting Stieltjes functions is given by Grabovsky
+  (2022, Theorem 2.6), who attributes it to Caprini (1980). The lemma used
+  here is weak duality for the same convex problem, written with a dual
+  variable in data space.
 - The chi-squared used here weights the complex residual with one standard
   error per frequency. Misfits defined on apparent resistivity and phase are
   not covered.
@@ -109,6 +113,7 @@ Weidelt (1985), and analytic layered responses to 1e-15.
 
 ## References
 
+- Caprini, I. (1974). On the best representation of scattering data by analytic functions in L2-norm with positivity constraints. Nuovo Cimento A 21, 236–248. doi:10.1007/BF02724804
 - Caprini, I. (1980). General method of using positivity in analytic continuations. Rev. Roumaine Phys. 25, 731–740.
 - Grabovsky, Y. (2022). Reconstructing Stieltjes functions from their approximate values: a search for a needle in a haystack. SIAM J. Appl. Math. 82, 1135–1166. doi:10.1137/21M1392279
 - Parker, R. L. (1980). The inverse problem of electromagnetic induction: existence and construction of solutions based on incomplete data. J. Geophys. Res. 85, 4421–4428. doi:10.1029/JB085iB08p04421
