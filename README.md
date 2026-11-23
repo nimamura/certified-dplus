@@ -31,7 +31,7 @@ doubt: a value below it is impossible for any 1-D model.
 ## Install
 
 ```
-pip install git+https://github.com/OWNER/certified-dplus
+pip install git+https://github.com/nimamura/certified-dplus
 ```
 
 Requires Python 3.11 or later, NumPy, SciPy and python-flint.
